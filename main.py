@@ -1,6 +1,7 @@
 import sys
 from func import *
 import os
+import random
 with open("settings.txt","r") as f:
     content=f.readlines()
     LANG = content[0].split(" = ")[1]
@@ -22,5 +23,5 @@ while True:
          try:
             print(eval(command))
          except:
-          colored(200,20,10,["/!\ Error /!\\nThis command doesn't exist\nType 'help' to show existing commands.","/!\ Erreur /!\\nCette commande n'existe pas\nEntrez 'help' pour voir les commandes qui existent."])
+          colored(200,20,10,["/!\ Error /!\ \nThis command doesn't exist\nType 'help' to show existing commands.","/!\ Erreur /!\ \nCette commande n'existe pas\nEntrez 'help' pour voir les commandes qui existent."])
 
