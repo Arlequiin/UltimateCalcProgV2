@@ -13,9 +13,9 @@ while True:
     with open("settings.txt","r") as f:
         content=f.readlines()
         LANG = content[0].split(" = ")[1]
-        NAME = content[1].split(" = ")[1]
-        NAME = content[2].split(" = ")[1].replace("\n","")
-    command=input("\033[1m\033[92m{}@calc:\033[94mucpv2\033[0m$ ".format(NAME))
+        NAME = content[1].split(" = ")[1].replace("\n","")
+        CALC = content[2].split(" = ")[1].replace("\n","")
+    command=input("\033[1m\033[92m{}@{}:\033[94mucpv2\033[0m$ ".format(NAME,CALC))
     if command=="end":
         eval(command+"()")
     if command.startswith("formula("):

@@ -1,10 +1,6 @@
 LANG = 0
-NAME = badr
-CALC = ti83
-
-
-
-
+NAME = arl
+CALC = ti84
 
 
 

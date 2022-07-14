@@ -43,7 +43,7 @@ def setcalc():
     with open("settings.txt","w") as f2:
         for element in content:
             f2.write(element.replace(content[2],"CALC = "+CALC))
-    colored(50,10,120,["Name set to "+CALC,"Nom choisi : "+CALC])
+    colored(50,10,120,["Calculator set to "+CALC,"Calculatrice choisie : "+CALC])
 def showhelp():
     colored(0,255,220,["'showhelp' : Show commands\n'setlang' : Change language\n'setname' : Change name\n'ruleof3' : calculate unknown with rule of 3\nrand: random choice\nDiscord of the dev : Arlequiin#1853","'showhelp' : Affiche les commandes\n'setlang' : permet de changer la langue\n'setname' : permet de changer le nom\n'ruleof3' permet de calculer l'inconnu avec la règle de trois\n'rand' permet de faire un choix aléatoire\nDiscord du dev : Arlequiin#1853"])
 def end():
